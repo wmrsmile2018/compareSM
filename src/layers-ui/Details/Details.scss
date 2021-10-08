@@ -1,0 +1,11 @@
+@import '../../styles/globalStyles.scss';
+
+.details {
+  font-size: 24px;
+  & > p {
+    & > span {
+      margin-left: 5px;
+      color: #585858;
+    }
+  }
+}

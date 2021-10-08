@@ -1,0 +1,24 @@
+{
+  "users": [
+    { "id": "1", "firstName": "json-server-1", "secondName": "typicode" },
+    { "id": "2", "firstName": "json-server-2", "secondName": "typicode" },
+    { "id": "3", "firstName": "json-server-3", "secondName": "typicode" },
+    { "id": "4", "firstName": "json-server-4", "secondName": "typicode" },
+    { "id": "5", "firstName": "json-server-5", "secondName": "typicode" },
+    { "id": "6", "firstName": "json-server-6", "secondName": "typicode" },
+    { "id": "7", "firstName": "json-server-7", "secondName": "typicode" },
+    { "id": "8", "firstName": "json-server-8", "secondName": "typicode" },
+    { "id": "9", "firstName": "json-server-9", "secondName": "typicode" },
+    { "id": "10", "firstName": "json-server-10", "secondName": "typicode" },
+    { "id": "11", "firstName": "json-server-11", "secondName": "typicode" },
+    { "id": "12", "firstName": "json-server-12", "secondName": "typicode" },
+    { "id": "13", "firstName": "json-server-13", "secondName": "typicode" },
+    { "id": "14", "firstName": "json-server-14", "secondName": "typicode" },
+    { "id": "15", "firstName": "json-server-15", "secondName": "typicode" }
+  ],
+  "user": {
+    "id": "15",
+    "firstName": "json-server-15",
+    "secondName": "typicode"
+  }
+}

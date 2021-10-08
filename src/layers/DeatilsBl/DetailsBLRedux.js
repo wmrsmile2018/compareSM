@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useCallback, useEffect } from 'react';
 import { useGetUser } from './hook/useGetUser';
 import { Details } from '../../layers-ui/Details/Details';
 import { useDispatch } from 'react-redux';
@@ -9,7 +9,7 @@ export const DetailsBLRedux = () => {
   const [state, setState] = useState('hello');
   const user = useGetUser();
 
-  useEffect(() => {
+  const handleOnClick = useCallback(() => {
     dispatch(
       putUser({
         firstName: 'user1',
@@ -40,7 +40,7 @@ export const DetailsBLRedux = () => {
         secondName: Date.now().toString(),
       })
     );
-  }, [state, dispatch]);
+  }, [dispatch]);
 
   useEffect(() => {
     console.log(user);
@@ -49,12 +49,7 @@ export const DetailsBLRedux = () => {
 
   return (
     <>
-      <input
-        onChange={({ target }) => {
-          setState(target.value);
-        }}
-        value={state}
-      />
+      <button onClick={handleOnClick}>Записать</button>
       <Details user={user} />
     </>
   );

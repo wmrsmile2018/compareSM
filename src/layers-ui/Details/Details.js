@@ -1,12 +1,12 @@
 import React from 'react';
 import clsx from 'clsx';
 import PropTypes from 'prop-types';
-
+import { observer } from 'mobx-react-lite';
 import { Title } from '../../components/Title/';
 
 import './Details.scss';
 
-export const Details = ({ className, user }) => {
+export const Details = observer(({ className, user }) => {
   const classes = clsx(className, 'details');
   return (
     <div className={classes}>
@@ -21,7 +21,7 @@ export const Details = ({ className, user }) => {
       </p>
     </div>
   );
-};
+});
 
 Details.propTypes = {
   className: PropTypes.string,
